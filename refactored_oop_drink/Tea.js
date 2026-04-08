@@ -1,6 +1,6 @@
-const Drink = require("./Drink");
+const Drink = require("./Drink.js");
 
-class TeaDrink extends Drink {
+class Tea extends Drink {
   constructor(name, type, onHand, fromCountry) {
     super(name, type, onHand);
     this.fromCountry = fromCountry;
@@ -11,6 +11,4 @@ class TeaDrink extends Drink {
   }
 }
 
-const Matcha = new TeaDrink("Matcha", "Tea", 10, "Japan");
-
-Matcha.teaFrom();
+module.exports = Tea;

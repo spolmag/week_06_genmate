@@ -1,11 +1,10 @@
-// Beer
+const Drink = require("./Drink.js");
 
 class Beer extends Drink {
-    constructor(name, type, degree) {
-        super(name, type);
-        this.degree = degree;
-        console.log(`${this.name} degree ${this.degree}`);
-    }
+  constructor(name, type, onHand, degree) {
+    super(name, type, onHand);
+    this.degree = degree;
+  }
 }
 
 module.exports = Beer;

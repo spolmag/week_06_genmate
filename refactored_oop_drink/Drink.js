@@ -8,7 +8,7 @@ class Drink {
 
   drinkStatus() {
     if (this.onHand <= 0) return "Out of Service!";
-    if (this.onHand <= 10) return "Last " + this.onHand + " serve!";
+    if (this.onHand <= 10) return `Last ${this.onHand} serve!`;
     return "Ready to serve.";
   }
 }
